@@ -36,6 +36,10 @@ const styles = StyleSheet.create ({
     chartText:{
         fontSize:16,
         color: "black",
+        flex:1
+    },
+    flex2:{
+        flex:2
     },
     chartItem:{
         flexDirection:"row",

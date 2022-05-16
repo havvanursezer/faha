@@ -3,7 +3,6 @@ import MainPageComponent from '../component/MainPageComponent'
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import { Alert } from 'react-native';
-import { Actions } from 'react-native-router-flux';
 import { setUser } from '../../../redux/action/app';
 
 export default function MainPageContainer() {

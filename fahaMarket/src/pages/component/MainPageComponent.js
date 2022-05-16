@@ -1,8 +1,6 @@
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import React from 'react'
 import styles from '../../styles/mainPage'
-import { Actions } from 'react-native-router-flux'
-import { FlatList } from 'react-native-gesture-handler'
 
 export default function MainPageComponent({
   user,
@@ -29,9 +27,9 @@ export default function MainPageComponent({
         {list != null && 
           list.map((item, key)=>(
             <View style = {styles.chartItem} key={key} >
-            <Text style={[styles.chartText, {flex:1}]}>{item.name}</Text>
-            <Text style={[styles.chartText, {flex:1}]}>{item.symbol}</Text>
-            <Text style={[styles.chartText, {flex:2}]}>{parseFloat(item.priceUsd).toFixed(3)} $</Text>
+            <Text style={styles.chartText}>{item.name}</Text>
+            <Text style={styles.chartText}>{item.symbol}</Text>
+            <Text style={[styles.chartText, styles.flex2]}>{parseFloat(item.priceUsd).toFixed(3)} $</Text>
           </View>
           ))
         }
