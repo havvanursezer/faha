@@ -13,10 +13,18 @@ const styles = StyleSheet.create ({
         alignItems:"center",
         elevation:10
     },
+    header: {
+        flex:4, 
+        alignItems:"flex-end"
+    },
     headerTitle:{
         fontSize: 20,
         color:"black",
     },  
+    logoutButton:{
+        flex:2, 
+        alignItems:"flex-end"
+    },
     logoutButtonIcon: {
         width:25,
         height:25,

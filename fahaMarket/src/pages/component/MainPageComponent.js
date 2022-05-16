@@ -13,10 +13,10 @@ export default function MainPageComponent({
   return (
     <View style = {styles.container}>
       <View style = {styles.headerCont}>
-        <View style={{flex:4, alignItems:"flex-end"}}>
+        <View style={styles.header}>
           <Text style = {styles.headerTitle}>Faha Market</Text>
         </View>
-        <View style = {{flex:2, alignItems:"flex-end"}}>
+        <View style = {styles.logoutButton}>
           <TouchableOpacity
           onPress={() =>onLogout()}>
             <Image 
@@ -26,21 +26,6 @@ export default function MainPageComponent({
         </View>
       </View>
       <View style = {styles.chartCont}>
-        {/* <View style = {styles.chartItem}>
-          <Text style={styles.chartText}>Bitcoin</Text>
-          <Text style={styles.chartText}>BTC</Text>
-          <Text style={styles.chartText}>460,015</Text>
-        </View>
-        <View style = {styles.chartItem}>
-          <Text style={styles.chartText}>Ethereum</Text>
-          <Text style={styles.chartText}>ETH</Text>
-          <Text style={styles.chartText}>31,471</Text>
-        </View>
-        <View style = {styles.chartItem}>
-          <Text style={styles.chartText}>Tether</Text>
-          <Text style={styles.chartText}>USDT</Text>
-          <Text style={styles.chartText}>15,46</Text>
-        </View> */}
         {list != null && 
           list.map((item, key)=>(
             <View style = {styles.chartItem} key={key} >
